@@ -1,5 +1,6 @@
 package codec;
 
+import codec.decoder.FixedLengthFrameDecoder;
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
 import io.netty.channel.embedded.EmbeddedChannel;

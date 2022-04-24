@@ -1,4 +1,4 @@
-package codec;
+package codec.encoder;
 
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandlerContext;
