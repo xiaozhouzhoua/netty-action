@@ -19,10 +19,9 @@ public class LogEventMonitor {
                 .channel(NioDatagramChannel.class)
                 //设置套接字选项 SO_BROADCAST
                 .option(ChannelOption.SO_BROADCAST, true)
-                .handler( new ChannelInitializer<Channel>() {
+                .handler(new ChannelInitializer<Channel>() {
                     @Override
-                    protected void initChannel(Channel channel)
-                            throws Exception {
+                    protected void initChannel(Channel channel) throws Exception {
                         ChannelPipeline pipeline = channel.pipeline();
                         //将 LogEventDecoder 和 LogEventHandler 添加到 ChannelPipeline 中
                         pipeline.addLast(new LogEventDecoder());
